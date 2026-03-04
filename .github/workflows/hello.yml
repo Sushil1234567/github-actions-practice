@@ -6,5 +6,5 @@ jobs:
      Greet:
            runs-on: ubuntu-latest
            steps: 
-                 - uses: actions/github-actions-practise/.github/workflows
+                 - uses: /actions/github-actions-practise/.github/workflows
                  - run: echo "hello from gituhub actions"
