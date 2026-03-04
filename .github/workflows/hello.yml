@@ -9,7 +9,6 @@ jobs:
                  - uses: actions/checkout@v4
                  - run: echo "hello from gituhub actions"
                  - run: echo "Current time is $(date +'%Y-%m-%d %H:%M:%S')"
-                 - if: github.event_name == 'push'
-                 - run: echo "The branch that triggered the push is ${{ github.ref_name }}"
+                 - run: echo "triggered branch name is ${{ github.ref_name }}"
                  - run: echo "files in the repo are " ls -R
                  - run: echo "operating system on the runner is $RUNNER_OS."
