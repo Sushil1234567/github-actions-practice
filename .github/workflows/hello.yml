@@ -1,0 +1,9 @@
+name: Hello
+on: push:
+         branches: [main]
+jobs: 
+     Greet:
+           runs-on: ubuntu-latest
+           steps: 
+                 - uses: actions/checkout
+                 - run: echo "hello from gituhub actions"
