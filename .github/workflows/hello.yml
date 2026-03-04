@@ -8,3 +8,7 @@ jobs:
            steps: 
                  - uses: actions/checkout@v4
                  - run: echo "hello from gituhub actions"
+                 - run: echo "Current time is $(date +'%Y-%m-%d %H:%M:%S')"
+                 - run: echo "The branch that triggered this run is: ${{ github.ref_name }} "
+                 - run: echo "files in the repo are " ls -R
+                 - run: echo "operating system on the runner is $RUNNER_OS."
