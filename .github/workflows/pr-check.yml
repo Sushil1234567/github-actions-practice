@@ -9,7 +9,7 @@ jobs:
      Notify:
             runs-on: ubuntu-latest
             steps:
-                  - run: echo "PR check running for the branch: ${{ github.ref_name }} "
+                  - run: echo "PR check running for the branch ${{ github.ref_name }} "
 
 
 

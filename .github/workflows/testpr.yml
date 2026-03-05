@@ -1,4 +1,4 @@
-name: Hello
+name: NewHello
 on: 
    push:
         branches: [newbranch]
