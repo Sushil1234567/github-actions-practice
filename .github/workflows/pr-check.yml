@@ -9,7 +9,7 @@ jobs:
      Notify:
             runs-on: ubuntu-latest
             steps:
-                  - run: echo "PR check running for the branch $BRANCH_NAME"
+                  - run: echo "PR check running for the branch: $BRANCH_NAME "
 
 
 
