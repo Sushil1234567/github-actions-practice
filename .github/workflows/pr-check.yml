@@ -1,7 +1,7 @@
 name: pr check
 on: 
    pull_request:
-                branches: [main]
+                branches: [newbranch]
                 types:
                       - opened
                       - synchronize
@@ -9,7 +9,7 @@ jobs:
      Notify:
             runs-on: ubuntu-latest
             steps:
-                  - run: echo "PR check running for the branch: $BRANCH_NAME "
+                  - run: echo "PR check running for the branch: ${{ github.ref_name }} "
 
 
 
