@@ -1,14 +1,14 @@
-name: Hello
+name: NewHello
 on: 
    push:
         branches: [newbranch]
 jobs: 
-     NewRun:
-            runs-on: ubuntu-latest
-            steps: 
-                  - uses: actions/checkout@v4
-                  - run: echo "hello from gituhub actions"
-                  - run: echo "Current date time is $(date +'%d-%m-%Y %H:%M:%S')"
-                  - run: echo "triggered branch name is ${{ github.ref_name }}"
-                  - run: echo "files in the repo are " ls -R
-                  - run: echo "operating system on the runner is $RUNNER_OS "
+     Greet:
+           runs-on: ubuntu-latest
+           steps: 
+                 - uses: actions/checkout@v4
+                 - run: echo "hello from gituhub actions"
+                 - run: echo "Current date time is $(date +'%d-%m-%Y %H:%M:%S')"
+                 - run: echo "triggered branch name is ${{ github.ref_name }}"
+                 - run: echo "files in the repo are " ls -R
+                 - run: echo "operating system on the runner is $RUNNER_OS "
